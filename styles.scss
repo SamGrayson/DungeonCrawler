@@ -1,0 +1,699 @@
+
+.hidden {
+  display: none;
+}
+
+                                            /* login page */
+.loginWrapper {
+  width: 100%;
+  height:100%;
+}
+.wrapper {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+          flex-direction: column;
+  width:60%;
+  height:100vh;
+}
+.welcome {
+  height: 200px;
+  width: 100%;
+  text-decoration: none;
+  list-style: none;
+  text-align: center;
+  h1 {
+    font-size: 4em;
+  }
+  h3 {
+    font-size: 2em;
+  }
+}
+
+.formWrap {
+  height: 300px;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+          align-items: center;
+  form {
+    width: 100%;
+    height: 200px;
+  }
+  input {
+    height: 200px;
+    width: 100%;
+    text-align: center;
+    font-size: 3em;
+  }
+}
+
+.enter {
+  width: 20%;
+  height:50px;
+  background-color: darkred;
+  color: white;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.5vw;
+}
+
+.enter:hover {
+  background-color: rgb(82, 9, 16);
+  cursor: pointer;
+}
+
+
+
+////////////////////////////////////////////////////////////////////////////
+
+
+
+
+.pageWrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height:100vh;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+
+                                            /* top bar */
+
+
+.topBar {
+  height: 80px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: black;
+  font-size: 1.5em;
+  color: whitesmoke;  }
+
+#user {
+  margin-right: 25px;
+  font-size: 1.8em;
+  color: whitesmoke;
+}
+
+#charHealth {
+  color: darkred;
+}
+
+
+                                            /* Game Window */
+
+
+.gameWindow {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  height: 70vh;
+  background-color: whitesmoke;
+  }
+
+.leftWall {
+  width: 35%;
+  height: 70vh;
+  background-color: gray;
+  position: relative;
+
+  .triangleRight1 {
+    	width: 0;
+    	height: 0;
+      border-bottom: 15vh solid transparent;
+    	border-right: 15vw solid whitesmoke;
+      float:right;
+      position: relative;
+  }
+
+  .wallLineLeft {
+    width: 2px;
+    height: 61vh;
+    background-color: black;
+    position: absolute;
+    right: 40%;
+    top: 1.3%;
+  }
+
+
+  .triangleRight2 {
+    	width: 0;
+    	height: 0;
+      border-top: 20vh solid transparent;
+    	border-right: 25vw solid whitesmoke;
+      float:right;
+      position: relative;
+      top: 50.2%;
+  }
+}
+
+.middleContent {
+    width: 30%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+//////////////////
+// Monster Divs //
+//////////////////
+
+.monster1 {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.head {
+  height: 225px;
+  width: 225px;
+  border-radius: 50%;
+  background-color: rgb(58, 156, 16);
+  position: relative;
+  margin: 0 auto;
+  top: 50px;
+}
+.eye {
+  height: 165px;
+  width: 165px;
+  border-radius: 50%;
+  background-color: white;
+  position: relative;
+  margin: 0 auto;
+  top: 20px;
+}
+.iris {
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  background-color: black;
+  position: relative;
+  margin: 0 auto;
+  top: 28px;
+}
+.shine {
+  height: 30px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: white;
+  position: relative;
+  margin: 0 auto;
+  top: 20px;
+  left: 13px;
+  transform:rotateZ(-20deg);
+}
+.mouth {
+  height: 5px;
+  width: 100px;
+  border-bottom-left-radius: 100%;
+  border-bottom-right-radius: 100%;
+  background-color: black;
+  position: relative;
+  margin: 0 auto;
+  top: 30px;
+  left: 8px;
+  .tooth {
+    position: relative;
+    margin: 0 auto;
+    top: 2px;
+    left: 16px;
+  	width: 0;
+  	height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 15px solid white;
+  }
+}
+
+.monster1Dead {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  margin-top: 150px;
+  .head {
+    height: 225px;
+    width: 225px;
+    border-radius: 50%;
+    background-color: rgb(58, 156, 16);
+    position: relative;
+    margin: 0 auto;
+    top: 50px;
+    transform:rotateZ(20deg);
+  }
+
+  .irisDead {
+    height: 100px;
+    width: 100px;
+    position: relative;
+    margin: 0 66px;
+    top: 70px;
+    transform: rotateZ(20deg);
+  }
+
+  .xeyes {
+    font-size:6em;
+    transform:rotateZ(20deg);
+  }
+
+  .mouthDead {
+    height: 30px;
+    width: 50px;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+    background-color: black;
+    position: relative;
+    margin: 0 auto;
+    top: 70px;
+    left: 8px;
+    .tooth {
+      position: relative;
+      margin: 0 auto;
+      left: 15px;
+    	width: 0;
+    	height: 0;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-top: 15px solid white;
+    }
+  }
+}
+
+//////////////////////////////////////////////////////////
+
+///////////
+// CHEST //
+///////////
+
+
+
+.chestBox {
+  z-index: 5;
+  height: 150px;
+  width: 200px;
+  background-color: rgba(107, 60, 27, 0.93);
+  position: relative;
+  top: 60px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px black;
+  .chestShadow {
+    box-shadow: 10px 5px 20px 5px black;
+    width: 200px;
+    position: relative;
+    top: 91px;
+    right:5px;
+  }
+  .chestLine {
+    height:5px;
+    background-color: black;
+    width:100%;
+    position:relative;
+    top:50%;
+  }
+  .chestLinkShadow {
+    height:6px;
+    background-color: rgba(2, 0, 5, 0.19);
+    width:100%;
+    position:relative;
+    top:50%;
+  }
+  .lock {
+    height: 50px;
+    background-color: #eec92a;
+    width: 50px;
+    position: relative;
+    margin: 0 auto;
+    top: 40px;
+    border-radius: 10px;
+    .lockShine {
+      height: 20px;
+      width: 15px;
+      background-color: #f6e9af;
+      position: relative;
+      margin: 0 auto;
+      left:10px;
+      border-radius: 5px;
+    }
+  }
+}
+
+.chestBox:hover {
+  cursor: pointer;
+}
+
+.chestBox {
+  z-index: 5;
+  height: 150px;
+  width: 200px;
+  background-color: rgba(107, 60, 27, 0.93);
+  position: relative;
+  top: 60px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px black;
+  .chestShadow {
+    box-shadow: 10px 5px 20px 5px black;
+    width: 200px;
+    position: relative;
+    top: 91px;
+    right:5px;
+  }
+  .chestLine {
+    height:5px;
+    background-color: black;
+    width:100%;
+    position:relative;
+    top:50%;
+  }
+  .chestLinkShadow {
+    height:6px;
+    background-color: rgba(2, 0, 5, 0.19);
+    width:100%;
+    position:relative;
+    top:50%;
+  }
+  .lock {
+    height: 50px;
+    background-color: #eec92a;
+    width: 50px;
+    position: relative;
+    margin: 0 auto;
+    top: 40px;
+    border-radius: 10px;
+    .lockShine {
+      height: 20px;
+      width: 15px;
+      background-color: #f6e9af;
+      position: relative;
+      margin: 0 auto;
+      left:10px;
+      border-radius: 5px;
+    }
+  }
+}
+
+.chestBox:hover {
+  cursor: pointer;
+}
+
+
+/////////////////////////////////////////////////////////
+
+
+////////////
+// Throne //
+////////////
+
+.throne h1 {
+  margin-bottom: 80px;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.chairBox {
+  height: 200px;
+  width: 125px;
+  background-color: rgb(230, 194, 3);
+  position: relative;
+  top: -20px;
+  border-radius: 10px;
+  .insideBoxtop {
+    height: 190px;
+    width: 90px;
+    background-color: #7e0000;
+    position: relative;
+    top: 10px;
+    border-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    margin: 0 auto;
+  }
+}
+.bottomBox {
+  height: 100px;
+  width: 180px;
+  margin: auto;
+  position: relative;
+  background-color: #e6c203;
+  right: 27.5px;
+}
+
+
+
+/////////////////////////////////////////////////////////
+
+.rightWall {
+
+  width: 35%;
+  height: 70vh;
+  background-color: gray;
+  position: relative;
+
+  .triangleLeft1 {
+      width: 0;
+      height: 0;
+      border-bottom: 15vh solid transparent;
+      border-left: 15vw solid whitesmoke;
+      float:left;
+      position: relative;
+  }
+
+  .wallLineRight {
+    width: 2px;
+    height: 61vh;
+    background-color: black;
+    position: absolute;
+    left: 40%;
+    top: 1.3%;
+  }
+
+
+  .triangleLeft2 {
+      width: 0;
+      height: 0;
+      border-top: 20vh solid transparent;
+      border-left: 25vw solid whitesmoke;
+      float:left;
+      position: relative;
+      top: 50.2%;
+  }
+}
+
+
+                                            /* UserUI */
+
+
+.userUIBar {
+  height: 20vh;
+  width: 100%;
+  background-color: black;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;-webkit-box-direction: normal;-webkit-flex-direction: row;-ms-flex-direction: row;flex-direction: row;
+  }
+
+
+.status {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  width: 35%;
+
+  .weaponName {
+    width: 100%;
+    height: 50%;
+    color: whitesmoke;
+    margin-left: 15%;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  .power {
+    width: 100%;
+    height: 50%;
+    color: whitesmoke;
+    margin-left: 15%;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+}
+
+.moveForwardWrap {
+  height: 100%;
+  width: 30%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+          justify-content: center;
+
+  .moveForwardButton {
+    	width: 0;
+    	height: 0;
+    	border-left: 6vh solid transparent;
+    	border-right: 6vh solid transparent;
+
+    	border-bottom: 6vw solid whitesmoke;
+
+      &:hover {
+        cursor: pointer;
+      }
+  }
+}
+
+.buttons {
+  width: 35%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;-webkit-justify-content: center;-ms-flex-pack: center;justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+          flex-direction: column;
+
+  .attackButton {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;-webkit-justify-content: center;-ms-flex-pack: center;justify-content: center;
+    width: 50%;
+    height: 50%;
+    background-color:darkred;
+    color: whitesmoke;
+    padding: 0;
+    margin: 0;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  h2 {
+    padding: 0;
+    margin: 0;
+  }
+}
+  .attackButton:hover {
+    background-color:rgb(115, 3, 16);
+    cursor: pointer;
+  }
+}
+
+
+/*# sourceMappingURL=style.css.map */
