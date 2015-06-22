@@ -10,7 +10,7 @@
 
 .topWrap {
   width: 30%;
-  height: 100px;
+  height: 300px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -25,7 +25,7 @@
   justify-content: center;
   text-align: center;
   background-color: black;
-  box-shadow: 10px 10px 150px 100px black; }
+  box-shadow: 10px 0px 150px 50px black; }
   .topWrap h1 {
     margin: 0;
     padding: 0; }
