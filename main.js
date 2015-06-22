@@ -326,7 +326,7 @@ function init() {
             var particle = new Particle(context);
 
             // Set the position to be inside the canvas bounds
-            particle.setPosition(generateRandom(0, canvasWidth), generateRandom(0, canvasHeight));
+            particle.setPosition(generateRandom(0, canvasWidth), generateRandom(0, canvasHeight - 200));
 
             // Set the initial velocity to be either random and either negative or positive
             particle.setVelocity(generateRandom(-maxVelocity, maxVelocity), generateRandom(-maxVelocity, maxVelocity));
