@@ -4,7 +4,9 @@
 /* login page */
 .loginWrapper {
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  background-image: url("http://www.1023jackfm.com/files/dungeon.jpg");
+  background-size: cover; }
 
 .wrapper {
   margin: 0 auto;
@@ -35,9 +37,11 @@
   list-style: none;
   text-align: center; }
   .welcome h1 {
-    font-size: 4em; }
+    font-size: 4.5em;
+    color: white; }
   .welcome h3 {
-    font-size: 2em; }
+    font-size: 2em;
+    color: white; }
 
 .formWrap {
   height: 300px;
