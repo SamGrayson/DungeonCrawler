@@ -212,8 +212,8 @@ var particles = [];
 var particleCount = 30;
 var maxVelocity = 2;
 var targetFPS = 33;
-var canvasWidth = 1000;
-var canvasHeight = 800;
+var canvasWidth = 600;
+var canvasHeight = 600;
 var imageObj = new Image();
 
 imageObj.onload = function() {
