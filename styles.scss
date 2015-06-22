@@ -145,7 +145,8 @@
   justify-content: center;
   background-color: black;
   font-size: 1.5em;
-  color: whitesmoke;  }
+  color: whitesmoke;
+  z-index: 1;  }
 
 #user {
   margin-right: 25px;
@@ -222,6 +223,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 //////////////////
@@ -232,6 +239,11 @@
   height: 100%;
   width: 100%;
   position: relative;
+  -webkit-animation-name: hover;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-timing-function: ease;
+  -webkit-animation-iteration-count: infinite;
+
 }
 .head {
   height: 225px;
@@ -242,6 +254,15 @@
   margin: 0 auto;
   top: 50px;
 }
+
+.head:hover {
+  cursor: url('animaatjes_swords_icon43.cur'), pointer;
+}
+
+.head:active {
+  cursor: url('animaatjes_swords_icon43.cur'), pointer;
+}
+
 .eye {
   height: 165px;
   width: 165px;
@@ -271,6 +292,24 @@
   left: 13px;
   transform:rotateZ(-20deg);
 }
+.monsterShadow {
+  box-shadow: 10px 5px 60px 10px black;
+  width: 200px;
+  position: absolute;
+  top: 500px;
+  right: 395px;
+  -webkit-animation-name: monsterShadow;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-timing-function: ease;
+  -webkit-animation-iteration-count: infinite;
+}
+.monsterShadowDead {
+  box-shadow: 10px 5px 40px 10px black;
+   width: 150px;
+   position: absolute;
+   top: 500px;
+   right: 420px;
+}
 .mouth {
   height: 5px;
   width: 100px;
@@ -299,6 +338,9 @@
   width: 100%;
   position: relative;
   margin-top: 150px;
+  -webkit-animation-name: dyingMonster;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-iteration-count: 1;
   .head {
     height: 225px;
     width: 225px;
@@ -347,6 +389,253 @@
   }
 }
 
+.monster2 {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  -webkit-animation-name: hover;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-timing-function: ease;
+  -webkit-animation-iteration-count: infinite;
+
+  .eye1 {
+    height: 30px;
+    width: 30px;
+    position: relative;
+    margin: 0 auto;
+    right:20px;
+    top: 60px;
+    background-color: black;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+  }
+
+  .eye2 {
+    height: 50px;
+    width: 40px;
+    position: relative;
+    margin: 0 auto;
+    top: 14px;
+    left: 24px;
+    background-color: black;
+    border-radius: 50%;
+  }
+
+}
+
+.body {
+  height: 250px;
+  width: 150px;
+  border-top-left-radius: 40%;
+  border-top-right-radius: 40%;
+  background-color: lightgray;
+  position: relative;
+  margin: 0 auto;
+  top: 50px;
+}
+
+.head:hover {
+  cursor: url('animaatjes_swords_icon43.cur'), pointer;
+}
+
+.head:active {
+  cursor: url('animaatjes_swords_ic.png'), pointer;
+}
+
+.body:hover {
+  cursor: url('animaatjes_swords_icon43.cur'), pointer;
+}
+
+.body:active {
+  cursor: url('animaatjes_swords_ic.png'), pointer;
+}
+
+.eyes {
+  height:50px;
+  .xeyes1 {
+    font-size:4em;
+  }
+  .xeyes2 {
+    font-size:5em;
+  }
+}
+
+.eye1Dead {
+  height:50px;
+  width:50px;
+}
+
+.eye1 {
+  height: 30px;
+  width: 30px;
+  position: relative;
+  margin: 0 auto;
+  top: 45px;
+  right: 30px
+}
+
+.monster2Dead {
+  -webkit-animation-name: ghostDie;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-iteration-count: 1;
+}
+
+.eye2 {
+  height: 50px;
+  width: 40px;
+  position: relative;
+  margin: 0 auto;
+  left:16px;
+  top: 5px;
+}
+
+.iris {
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  background-color: black;
+  position: relative;
+  margin: 0 auto;
+  top: 28px;
+}
+.shine {
+  height: 30px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: white;
+  position: relative;
+  margin: 0 auto;
+  top: 20px;
+  left: 13px;
+  transform:rotateZ(-20deg);
+}
+/* .monsterShadow {
+  box-shadow: 10px 5px 60px 10px black;
+  width: 200px;
+  position: absolute;
+  top: 500px;
+  right: 395px;
+  -webkit-animation-name: monsterShadow;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-timing-function: ease;
+  -webkit-animation-iteration-count: infinite;
+} */
+/* .monsterShadowDead {
+  box-shadow: 10px 5px 40px 10px black;
+   width: 150px;
+   position: absolute;
+   top: 500px;
+   right: 420px;
+} */
+
+#smoke {
+  height:50%;
+  width: 100%;
+  position: absolute;
+}
+.mouth1 {
+  height: 50px;
+  width: 100px;
+  border-top-left-radius: 100%;
+  border-top-right-radius: 100%;
+  background-color: black;
+  position: relative;
+  margin: 0 auto;
+  top: 60px;
+}
+.tounge {
+    height: 40px;
+    width: 60px;
+    border-radius:30%;
+    background-color: red;
+    position: relative;
+    margin: 0 auto;
+    top: 35px;
+    right: -5px;
+    -webkit-animation-name: tounge;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-iteration-count: infinite;
+
+}
+.toungeLine {
+  margin: 0 auto;
+  height: 30px;
+  width: 2px;
+  background-color:black;
+  -webkit-animation-name: toungeLine;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-timing-function: ease;
+  -webkit-animation-iteration-count: infinite;
+}
+
+.triangle1 {
+  width: 0;
+  height: 0;
+  position: relative;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  top: 50px;
+  left: -55px;
+  margin: 0 auto;
+  border-top: 20px solid lightgray;
+
+}
+.triangle2 {
+  width: 0;
+  height: 0;
+  position: relative;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  top: 30px;
+  left: -25px;
+  margin: 0 auto;
+  border-top: 20px solid lightgray;
+  -webkit-animation-name: triangle2move;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+}
+.triangle3 {
+  width: 0;
+  height: 0;
+  position: relative;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  top: 10px;
+  left: 2px;
+  margin: 0 auto;
+  border-top: 20px solid lightgray;
+  -webkit-animation-name: triangle3move;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+}
+.triangle4 {
+  width: 0;
+  height: 0;
+  position: relative;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  top: -10px;
+  left: 30px;
+  margin: 0 auto;
+  border-top: 20px solid lightgray;
+  -webkit-animation-name: triangle4move;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+}
+.triangle5 {
+  width: 0;
+  height: 0;
+  position: relative;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  top: -30px;
+  left: 55px;
+  margin: 0 auto;
+  border-top: 20px solid lightgray;
+
+}
+
 //////////////////////////////////////////////////////////
 
 ///////////
@@ -363,13 +652,12 @@
   position: relative;
   top: 60px;
   border-radius: 10px;
-  box-shadow: 5px 5px 5px black;
   .chestShadow {
     box-shadow: 10px 5px 20px 5px black;
     width: 200px;
     position: relative;
-    top: 91px;
-    right:5px;
+    top: 84px;
+    right: 5px;
   }
   .chestLine {
     height:5px;
@@ -409,28 +697,60 @@
   cursor: pointer;
 }
 
-.chestBox {
-  z-index: 5;
+.chestOpen {
+  z-index:0;
+}
+
+.chestBox2 {
+  z-index: 2;
   height: 150px;
   width: 200px;
   background-color: rgba(107, 60, 27, 0.93);
   position: relative;
   top: 60px;
   border-radius: 10px;
-  box-shadow: 5px 5px 5px black;
+  .boxOpenBorder {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 75px;
+    width: 200px;
+    position: absolute;
+    border-top: 15px solid rgb(166, 126, 97);
+    border-right: 15px solid rgb(166, 126, 97);
+    border-left: 15px solid rgb(166, 126, 97);
+  }
+  .boxOpenShadow {
+    height: 60px;
+    width: 170px;
+    position: absolute;
+    margin-left: 15px;
+    margin-top: 15px;
+    border-top: 15px solid rgba(8, 6, 5, 0.3);
+    border-right: 15px solid rgba(8, 6, 5, 0.1);
+    border-left: 15px solid rgba(8, 6, 5, 0.1);
+  }
+  .boxOpenColor {
+    height: 50px;
+    width: 140px;
+    position: absolute;
+    margin-left: 30px;
+    margin-top: 30px;
+    background-color: rgba(8, 6, 5, 0.6);
+  }
   .chestShadow {
     box-shadow: 10px 5px 20px 5px black;
     width: 200px;
     position: relative;
-    top: 91px;
+    top: 84px;
     right:5px;
   }
   .chestLine {
-    height:5px;
+    height: 5px;
     background-color: black;
-    width:100%;
-    position:relative;
-    top:50%;
+    width: 100%;
+    position: relative;
+    top: 50%;
+    box-shadow: 0px -50px 100px 40px rgba(249, 238, 106, 0.85);
   }
   .chestLinkShadow {
     height:6px;
@@ -439,23 +759,24 @@
     position:relative;
     top:50%;
   }
-  .lock {
-    height: 50px;
+  .lockTop {
+    height: 25px;
     background-color: #eec92a;
     width: 50px;
     position: relative;
     margin: 0 auto;
-    top: 40px;
+    top: -30px;
     border-radius: 10px;
-    .lockShine {
-      height: 20px;
-      width: 15px;
-      background-color: #f6e9af;
-      position: relative;
-      margin: 0 auto;
-      left:10px;
-      border-radius: 5px;
-    }
+    z-index:-1;
+  }
+  .lockBottom {
+    height: 25px;
+    background-color: #eec92a;
+    width: 50px;
+    position: relative;
+    margin: 0 auto;
+    top: 35px;
+    border-radius: 10px;
   }
 }
 
@@ -563,6 +884,7 @@
   -ms-flex-align: center;
           align-items: center;
   -webkit-box-orient: horizontal;-webkit-box-direction: normal;-webkit-flex-direction: row;-ms-flex-direction: row;flex-direction: row;
+  z-index: 1;
   }
 
 
@@ -692,6 +1014,144 @@
   .attackButton:hover {
     background-color:rgb(115, 3, 16);
     cursor: pointer;
+  }
+}
+
+@-webkit-keyframes hover {
+  0% {
+    margin-bottom: 0px
+  }
+  50% {
+    margin-bottom: 100px
+  }
+  100% {
+    margin-bottom: 0px
+  }
+}
+
+@-webkit-keyframes dyingMonster {
+  0% {
+    margin-bottom: 150px
+  }
+  100% {
+    margin-bottom: 0px
+  }
+}
+
+@-webkit-keyframes monsterShadow {
+  0% {
+    box-shadow: 10px 5px 40px 10px black;
+     width: 150px;
+     position: absolute;
+     top: 500px;
+     right: 420px;
+  }
+  50% {
+    box-shadow: 10px 5px 60px 10px black;
+    width: 200px;
+    position: absolute;
+    top: 500px;
+    right: 395px;
+  }
+  100% {
+    box-shadow: 10px 5px 40px 10px black;
+     width: 150px;
+     position: absolute;
+     top: 500px;
+     right: 420px;
+  }
+}
+
+@-webkit-keyframes monsterShadowFade {
+  0% {
+    box-shadow: 10px 5px 60px 10px black;
+    width: 200px;
+    position: absolute;
+    top: 500px;
+    right: 395px;
+  }
+  100% {
+    box-shadow: 10px 5px 60px 10px black;
+    width: 200px;
+    position: absolute;
+    top: 500px;
+    right: 395px;
+    display: none;
+  }
+}
+
+@-webkit-keyframes tounge {
+  0% {
+    height:60px;
+  }
+  50% {
+    height:40px;
+  }
+  100% {
+    height:60px;
+  }
+}
+
+@-webkit-keyframes toungeLine {
+  0% {
+    height:50px;
+  }
+  50% {
+    height:30px;
+  }
+  100% {
+    height:50px;
+  }
+}
+
+@-webkit-keyframes triangle2move {
+  0% {
+    left:-25px;
+  }
+  50% {
+    left:25px;
+  }
+  100% {
+    left:-25px;
+  }
+}
+@-webkit-keyframes triangle3move {
+  0% {
+    left:2px;
+  }
+  25% {
+    left:23px;
+  }
+  50% {
+    left:-23px;
+  }
+  100% {
+    left:2px;
+  }
+}
+@-webkit-keyframes triangle4move {
+  0% {
+    left:30px;
+  }
+  50% {
+    left:-30px;
+  }
+  100% {
+    left:30px;
+  }
+}
+
+@-webkit-keyframes ghostDie {
+  0% {
+    transform: rotateZ(0deg);
+    margin-top: 0px;
+  }
+  70% {
+    transform: rotateZ(60deg);
+    margin-top: 80px;
+  }
+  100% {
+    margin-top: 120px;
   }
 }
 

@@ -25,10 +25,12 @@
   </div>
 </div>
 
+
   <div class="pageWrapper hidden">
     <div class="topBar">
       <span id="user"></span><h1>Life: <span id="charHealth"></span></h1>
     </div>
+    <canvas id="smoke"></canvas>
     <div class="gameWindow">
       <div class="leftWall">
         <div class="triangleRight1"></div>
@@ -51,7 +53,51 @@
             </div>
           </div>
         </div>
-        <div id= "monsterClass" class="monster1Dead hidden">
+        <div id= "monsterClass" class="monster2 hidden">
+          <div class="body">
+            <div class="eyes">
+              <div class="eye1"></div>
+                <div class="shine1">
+              </div>
+              <div class="eye2">
+              </div>
+          </div>
+            <div class=mouth1>
+              <div class=tounge>
+                <div class=toungeLine></div>
+              </div>
+            </div>
+          </div>
+            <div class= 'triangle1'></div>
+            <div class= 'triangle2'></div>
+            <div class= 'triangle3'></div>
+            <div class= 'triangle4'></div>
+            <div class= 'triangle5'></div>
+        </div>
+        <div id= "monsterClass" class="monster2Dead hidden">
+          <div class="body">
+            <div class="eyes">
+              <div class="eye1">
+                <i class="fa fa-times xeyes1"></i>
+              </div>
+              <div class="eye2">
+                <i class="fa fa-times xeyes2"></i>
+              </div>
+          </div>
+            <div class=mouth1>
+              <div class=tounge>
+                <div class=toungeLine></div>
+              </div>
+            </div>
+          </div>
+            <div class= 'triangle1'></div>
+            <div class= 'triangle2'></div>
+            <div class= 'triangle3'></div>
+            <div class= 'triangle4'></div>
+            <div class= 'triangle5'></div>
+        </div>
+        <!-- <div class="monsterShadow hidden"></div> -->
+        <div id= "monsterClass2" class="monster1Dead hidden">
           <div class="head">
             <div class="eye">
               <div class="irisDead">
@@ -77,14 +123,15 @@
             <div class="chestShadow"></div>
           </div>
         </div>
-        <div id="chestOpen" class="chestOpen">
-          <div class="chestBox">
+        <div id="chestOpen" class="chestOpen hidden">
+          <div class="chestBox2">
+            <div class="boxOpenBorder"></div>
+            <div class="boxOpenShadow"></div>
+            <div class="boxOpenColor"></div>
             <div class="chestLine"></div>
             <div class="chestLinkShadow"></div>
-            <div class="lock">
-              <div class="lockShine">
-              </div>
-            </div>
+            <div class="lockTop"></div>
+            <div class="lockBottom"></div>
             <div class="topbar1"></div>
             <div class="topbar2"></div>
             <div class="chestShadow"></div>
@@ -128,10 +175,7 @@
         <div class="moveForwardButton">
         </div>
       </div>
-      <div class="buttons">
-        <div class="attackButton">
-          <h2> Attack! </h2>
-        </div>
+      <div class="Tracker">
       </div>
     </div>
   </div>
