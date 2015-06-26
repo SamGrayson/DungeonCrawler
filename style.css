@@ -1,3 +1,6 @@
+html {
+  min-width: 600px; }
+
 .hidden {
   display: none; }
 
@@ -483,7 +486,7 @@
    right: 420px;
 } */
 #smoke {
-  height: 49.6%;
+  height: 50%;
   width: 100%;
   position: absolute; }
 

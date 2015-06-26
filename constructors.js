@@ -7,7 +7,7 @@
 function Character(options) {
   this.name = options.name;
   this.life = 100;
-  this.weapon = sword;
+  this.weapon = sword
 }
 
 Character.prototype.attack = function (monster, weapon){
@@ -31,10 +31,6 @@ Character.prototype.attack = function (monster, weapon){
 Character.prototype.heal = function (lifeAdd) {
   this.life = lifeAdd.heart + character.life
 };
-
-Character.prototype.getWeapon = function (weapon, power) {
-  this.weapon = new Weapon ({name: name, power: power})
-}
 
 //////////////////
 // Main Monster //
@@ -68,16 +64,7 @@ Monster.prototype.attack = function (character, monsterAttack){
     console.log("You were hit for " + monsterAttack.power + " damage!");
     character.life = character.life - monsterAttack.power;
   }
-}
-
-Monster.prototype.getWeapon = function (power) {
-  var difficulty = Math.floor(Math.random() * 10);
-  if (difficulty > 1) {
-    this.power = 5;
-  } else {
-    this.power = 10;
-  }
-}
+};
 
 /////////////////////
 // Weapons / Items //
